@@ -4,7 +4,9 @@
 
 $randomNumbers = [];
 
-for ($i = 0; $i < 10; $i++) {
+// for ($i = 0; $i < 10; $i++) {
+
+for ($i = 0; $i < $_GET["numberX"]; $i++) {
     $number = rand(0, 10);
     $numberCouples = [$i, $number];
     array_push($randomNumbers, $numberCouples);
